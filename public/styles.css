@@ -1,0 +1,103 @@
+/* Styles for the body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container for the ToDo List */
+.container {
+  background: #ffffff;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+/* Header style */
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333333;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #fcb69f;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ff9a9e;
+}
+
+button {
+  padding: 10px 20px;
+  border: 2px solid #fcb69f;
+  background-color: #fcb69f;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff9a9e;
+  border-color: #ff9a9e;
+}
+
+/* List styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Span for task text */
+span {
+  flex: 1;
+  text-align: left;
+}
+
+/* Delete button styles */
+form button {
+  background-color: transparent;
+  border: none;
+  color: #f76c6c;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #f76c6c;
+  color: white;
+}
